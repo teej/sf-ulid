@@ -6,8 +6,8 @@ $$
 WITH setup AS (
 
 SELECT
-
-    '0123456789ABCDEFGHJKMNPQRSTVWXYZ' as encoding -- crockford base32 alphabet
+    -- crockford base32 alphabet
+    '0123456789ABCDEFGHJKMNPQRSTVWXYZ' as encoding
   
   , BITAND(BITSHIFTRIGHT(input, (6 - 1) * 8), 256 - 1) as ts_byte_0
   , BITAND(BITSHIFTRIGHT(input, (6 - 2) * 8), 256 - 1) as ts_byte_1
