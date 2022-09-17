@@ -1,5 +1,5 @@
 # sf-ulid
-An implementation of ULID for the Snowflake data warehouse
+An implementation of ULID for the Snowflake data warehouse. Based on the [ULID spec](https://github.com/ulid/spec).
 
 ## Usage
 ```
